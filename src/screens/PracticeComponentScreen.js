@@ -5,16 +5,16 @@ const PracticeComponentScreen = () => {
   const myName = "Uzair Iqbal";
   return (
     <View>
-      <Text>Getting Started With React Native</Text>
-      <Text>My Name is {myName}</Text>
+      <Text style={styles.headerStyle}>Getting Started With React Native</Text>
+      <Text style={styles.subHeaderStyle}>My Name is {myName}</Text>
     </View>
   );
 };
 const styles = StyleSheet.create({
-  textStyle1: {
+  headerStyle: {
     fontSize: 45,
   },
-  textStyle2: {
+  subHeaderStyle: {
     fontSize: 20,
   },
 });
