@@ -2,7 +2,10 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 const ComponentScreen = () => {
-  const greet = "Bye There";
+  const greet = [123, "AAA", "456", uzair()];
+  function uzair() {
+    return "LARAIB";
+  }
 
   return (
     <View>
