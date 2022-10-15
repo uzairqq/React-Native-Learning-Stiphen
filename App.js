@@ -4,6 +4,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from "./src/screens/ComponentScreen";
 import PracticeComponentScreen from "./src/screens/PracticeComponentScreen";
 import ListScreenComponent from "./src/screens/ListScreenComponent";
+import FlatListExcerciseComponent from "./src/screens/FlatListExcerciseComponent";
 
 const navigator = createStackNavigator(
   {
@@ -11,9 +12,10 @@ const navigator = createStackNavigator(
     Components: ComponentScreen,
     PracticeComponents: PracticeComponentScreen,
     ListComponent: ListScreenComponent,
+    FlatListExercise: FlatListExcerciseComponent,
   },
   {
-    initialRouteName: "ListComponent",
+    initialRouteName: "FlatListExercise",
     defaultNavigationOptions: {
       title: "App",
     },

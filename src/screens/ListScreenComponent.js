@@ -16,8 +16,6 @@ const ListScreenComponent = () => {
     <View>
       <Text>List Screen Component</Text>
       <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
         keyExtractor={(freind) => freind.name}
         data={freinds}
         renderItem={(element) => {
