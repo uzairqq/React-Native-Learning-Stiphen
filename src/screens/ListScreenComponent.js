@@ -16,15 +16,21 @@ const ListScreenComponent = () => {
     <View>
       <Text>List Screen Component</Text>
       <FlatList
+        horizontal
+        showsHorizontalScrollIndicator={false}
         keyExtractor={(freind) => freind.name}
         data={freinds}
         renderItem={(element) => {
-          return <Text>{element.item.name}</Text>;
+          return <Text style={styles.textStyle}>{element.item.name}</Text>;
         }}
       />
     </View>
   );
 };
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  textStyle: {
+    marginVertical: 15,
+  },
+});
 
 export default ListScreenComponent;
