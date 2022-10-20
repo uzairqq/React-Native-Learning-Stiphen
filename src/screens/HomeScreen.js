@@ -23,6 +23,12 @@ const HomeScreen = ({ navigation }) => {
         }}
         title="Go To Image Component Screen"
       ></Button>
+      <Button
+        onPress={() => {
+          navigation.navigate("CounterScreen");
+        }}
+        title="Go To Counter Component Screen"
+      ></Button>
       <TouchableOpacity onPress={() => navigation.navigate("ListComponent")}>
         <Text>Go To List Screen</Text>
       </TouchableOpacity>
